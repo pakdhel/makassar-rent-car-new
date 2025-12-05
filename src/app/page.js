@@ -3,6 +3,9 @@ import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
 import FeaturedCars from "./components/FeaturedCars";
 import WhyChooseUs from "./components/WhyChooseUs";
+import Services from "./components/Services";
+import CallToAction from "./components/CallToAction";
+import Footer from "./components/Footer";
 
 
 export default function Home() {
@@ -16,7 +19,10 @@ export default function Home() {
           <HeroSection />
           <FeaturedCars />
           <WhyChooseUs />
+          <Services />
+          <CallToAction />
         </div>
+        <Footer />
       </main>
     </>
   );
