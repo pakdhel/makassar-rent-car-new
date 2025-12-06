@@ -19,7 +19,7 @@ export default function HeroSection() {
                     <div className="space-y-8 animate-fade-in">
                     <div className="inline-block">
                         <span className="text-sm font-semibold text-accent px-4 py-2 bg-accent/10 rounded-full">
-                        #1 Rental Mobil di Makassar
+                        #1 Car Rental in Makassar
                         </span>
                     </div>
                     <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
