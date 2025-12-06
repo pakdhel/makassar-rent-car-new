@@ -17,56 +17,51 @@ export default function CarCard({ car, handleBooking, style }) {
                 <img
                     src={car.image}
                     alt={car.name}
-                    className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                    className="w-full h-40 sm:h-64 object-cover group-hover:scale-110 transition-transform duration-500"
                 />
-                
-                {/* Price Tag (Kanan Atas) */}
-                <div className="absolute top-4 right-4 bg-accent text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
+
+                {/* Price Tag */}
+                <div className="absolute top-2 right-2 sm:top-4 sm:right-4 bg-accent text-white px-3 py-1 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-semibold shadow-lg">
                     {car.price}/day
                 </div>
-                
-                {/* Category Tag (Kiri Atas) */}
+
+                {/* Category */}
                 {car.category && (
-                    <div className="absolute top-4 left-4 bg-card px-3 py-1 rounded-full text-xs font-medium shadow-md">
+                    <div className="absolute top-2 left-2 sm:top-4 sm:left-4 bg-card px-2 py-1 sm:px-3 sm:py-1 rounded-full text-[10px] sm:text-xs font-medium shadow-md">
                         {car.category}
                     </div>
                 )}
             </div>
-            
+
             {/* --- Bagian Detail & Aksi --- */}
-            <div className="p-6 space-y-4">
-                <h3 className="text-2xl font-bold group-hover:text-accent transition-colors">
+            <div className="p-4 sm:p-6 space-y-3 sm:space-y-4">
+                <h3 className="text-lg sm:text-2xl font-bold group-hover:text-accent transition-colors leading-tight">
                     {car.name}
                 </h3>
-                
-                {/* Ikon Detail (Kapasitas, Transmisi, Bahan Bakar) */}
-                <div className="grid grid-cols-3 gap-4 py-4 border-y border-border">
-                    
-                    {/* 1. Kapasitas */}
-                    <div className="flex flex-col items-center gap-2">
-                        <Users className="w-5 h-5 text-accent" />
-                        <span className="text-xs text-muted-foreground">{car.capacity}</span>
+
+                {/* Detail Icons */}
+                <div className="grid grid-cols-3 gap-2 sm:gap-4 py-3 sm:py-4 border-y border-border">
+                    <div className="flex flex-col items-center gap-1 sm:gap-2">
+                        <Users className="w-4 h-4 sm:w-5 sm:h-5 text-accent" />
+                        <span className="text-[10px] sm:text-xs text-muted-foreground">{car.capacity}</span>
                     </div>
-                    
-                    {/* 2. Transmisi */}
-                    <div className="flex flex-col items-center gap-2">
-                        <Clock className="w-5 h-5 text-accent" />
-                        <span className="text-xs text-muted-foreground">{car.transmission}</span>
+
+                    <div className="flex flex-col items-center gap-1 sm:gap-2">
+                        <Clock className="w-4 h-4 sm:w-5 sm:h-5 text-accent" />
+                        <span className="text-[10px] sm:text-xs text-muted-foreground">{car.transmission}</span>
                     </div>
-                    
-                    {/* 3. Bahan Bakar */}
+
                     {car.fuel && (
-                        <div className="flex flex-col items-center gap-2">
-                            <Fuel className="w-5 h-5 text-accent" />
-                            <span className="text-xs text-muted-foreground">{car.fuel}</span>
+                        <div className="flex flex-col items-center gap-1 sm:gap-2">
+                            <Fuel className="w-4 h-4 sm:w-5 sm:h-5 text-accent" />
+                            <span className="text-[10px] sm:text-xs text-muted-foreground">{car.fuel}</span>
                         </div>
                     )}
                 </div>
-                
-                {/* Tombol Booking */}
+
                 <Button 
-                    variant="accent" 
-                    className="w-full"
+                    variant="accent"
+                    className="w-full text-sm sm:text-base py-4 sm:py-6"
                     onClick={() => handleBooking(car.name)}
                 >
                     Book Now
