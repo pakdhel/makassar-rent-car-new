@@ -126,7 +126,7 @@ export default function Testimonials() {
                 </div>
         
                 {/* CTA Section */}
-                <div className="mt-20 text-center space-y-6 p-12 bg-gradient-to-br from-primary to-secondary rounded-3xl text-primary-foreground">
+                <div className="mt-20 text-center space-y-6 p-12 bg-linear-to-br from-primary to-secondary rounded-3xl text-primary-foreground">
                 <h2 className="text-3xl md:text-4xl font-bold">
                     Ready to Experience Our Service?
                 </h2>
