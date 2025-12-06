@@ -34,27 +34,27 @@ export default function CarCard({ car, handleBooking, style }) {
             </div>
 
             {/* --- Bagian Detail & Aksi --- */}
-            <div className="p-4 sm:p-6 space-y-3 sm:space-y-4">
-                <h3 className="text-lg sm:text-2xl font-bold group-hover:text-accent transition-colors leading-tight">
+            <div className="p-4 sm:p-6 space-y-2 md:space-y-3">
+                <h3 className="text-sm md:text-2xl font-medium md:font-black group-hover:text-accent transition-colors leading-tight">
                     {car.name}
                 </h3>
 
                 {/* Detail Icons */}
-                <div className="grid grid-cols-3 gap-2 sm:gap-4 py-3 sm:py-4 border-y border-border">
+                <div className="grid grid-cols-3 gap-2 sm:gap-4 py-2 sm:py-4 md:border-y sm:border-y border-border">
                     <div className="flex flex-col items-center gap-1 sm:gap-2">
-                        <Users className="w-4 h-4 sm:w-5 sm:h-5 text-accent" />
-                        <span className="text-[10px] sm:text-xs text-muted-foreground">{car.capacity}</span>
+                        <Users className="w-3 h-3 md:w-5 md:h-5 text-accent" />
+                        <span className="text-[8px] sm:text-xs text-muted-foreground">{car.capacity}</span>
                     </div>
 
                     <div className="flex flex-col items-center gap-1 sm:gap-2">
-                        <Clock className="w-4 h-4 sm:w-5 sm:h-5 text-accent" />
-                        <span className="text-[10px] sm:text-xs text-muted-foreground">{car.transmission}</span>
+                        <Clock className="w-3 h-3 md:w-5 md:h-5 text-accent" />
+                        <span className="text-[8px] sm:text-xs text-muted-foreground">{car.transmission}</span>
                     </div>
 
                     {car.fuel && (
                         <div className="flex flex-col items-center gap-1 sm:gap-2">
-                            <Fuel className="w-4 h-4 sm:w-5 sm:h-5 text-accent" />
-                            <span className="text-[10px] sm:text-xs text-muted-foreground">{car.fuel}</span>
+                            <Fuel className="w-3 h-3 md:w-5 md:h-5 text-accent" />
+                            <span className="text-[8px] sm:text-xs text-muted-foreground">{car.fuel}</span>
                         </div>
                     )}
                 </div>
