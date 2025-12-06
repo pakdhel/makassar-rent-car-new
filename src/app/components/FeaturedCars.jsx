@@ -4,11 +4,14 @@ import { useState } from "react";
 import { Card } from "@/components/ui/card";
 import { 
     Users, 
-    Clock
+    Clock,
+    Fuel
   } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import BookingModal from "./BookingModal";
+import { carData } from "@/data/carsData";
+import CarCard from "./CarCard";
 
 export default function FeaturedCars() {
     const [isBookingOpen, setIsBookingOpen] = useState(false);
@@ -19,32 +22,7 @@ export default function FeaturedCars() {
         setIsBookingOpen(true);
     };
 
-    const featuredCars = [
-        {
-          id: 1,
-          name: "Toyota Avanza",
-          image: "/placeholder.svg",
-          capacity: "7 Seats",
-          transmission: "Manual",
-          price: "350K",
-        },
-        {
-          id: 2,
-          name: "Honda Brio",
-          image: "/placeholder.svg",
-          capacity: "5 Seats",
-          transmission: "Automatic",
-          price: "300K",
-        },
-        {
-          id: 3,
-          name: "Toyota Innova",
-          image: "/placeholder.svg",
-          capacity: "7 Seats",
-          transmission: "Automatic",
-          price: "500K",
-        },
-    ];
+    const featuredCars = carData.filter(car => car.isFeatured === true).slice(0, 3);
 
     return(
         <>
@@ -65,42 +43,7 @@ export default function FeaturedCars() {
 
             <div className="grid md:grid-cols-3 gap-8">
                 {featuredCars.map((car, index) => (
-                <Card 
-                    key={car.id} 
-                    className="card-premium p-0 overflow-hidden group"
-                    style={{ animationDelay: `${index * 100}ms` }}
-                >
-                    <div className="relative overflow-hidden">
-                    <img
-                        src={car.image}
-                        alt={car.name}
-                        className="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-500"
-                    />
-                    <div className="absolute top-4 right-4 bg-accent text-white px-3 py-1 rounded-full text-sm font-semibold">
-                        {car.price}/day
-                    </div>
-                    </div>
-                    <div className="p-6 space-y-4">
-                    <h3 className="text-xl font-bold">{car.name}</h3>
-                    <div className="flex items-center gap-4 text-sm text-muted-foreground">
-                        <div className="flex items-center gap-1">
-                        <Users className="w-4 h-4" />
-                        {car.capacity}
-                        </div>
-                        <div className="flex items-center gap-1">
-                        <Clock className="w-4 h-4" />
-                        {car.transmission}
-                        </div>
-                    </div>
-                    <Button 
-                        variant="accent" 
-                        className="w-full"
-                        onClick={() => handleBooking(car.name)}
-                    >
-                        Book Now
-                    </Button>
-                    </div>
-                </Card>
+                    <CarCard key={car.id} car={car} handleBooking={handleBooking} style={{ animationDelay: `${index * 50}ms` }} />
                 ))}
             </div>
 

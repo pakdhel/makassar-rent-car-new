@@ -2,83 +2,22 @@
 
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
-import { Users, Clock, Fuel } from "lucide-react";
 import BookingModal from "../components/BookingModal";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { carData } from "@/data/carsData";
+import CarCard from "../components/CarCard";
 
 export default function Cars() {
     const [isBookingOpen, setIsBookingOpen] = useState(false);
     const [selectedCar, setSelectedCar] = useState("");
 
-    const cars = [
-        {
-            id: 1,
-            name: "Toyota Avanza",
-            image: "/placeholder.svg",
-            capacity: "7 Seats",
-            transmission: "Manual",
-            fuel: "Bensin",
-            price: "350K",
-            category: "MPV",
-        },
-        {
-            id: 2,
-            name: "Honda Brio",
-            image: "/placeholder.svg",
-            capacity: "5 Seats",
-            transmission: "Automatic",
-            fuel: "Bensin",
-            price: "300K",
-            category: "Hatchback",
-        },
-        {
-            id: 3,
-            name: "Toyota Innova",
-            image: "/placeholder.svg",
-            capacity: "7 Seats",
-            transmission: "Automatic",
-            fuel: "Diesel",
-            price: "500K",
-            category: "MPV",
-        },
-        {
-            id: 4,
-            name: "Suzuki Ertiga",
-            image: "/placeholder.svg",
-            capacity: "7 Seats",
-            transmission: "Manual",
-            fuel: "Bensin",
-            price: "400K",
-            category: "MPV",
-        },
-        {
-            id: 5,
-            name: "Toyota Fortuner",
-            image: "/placeholder.svg",
-            capacity: "7 Seats",
-            transmission: "Automatic",
-            fuel: "Diesel",
-            price: "800K",
-            category: "SUV",
-        },
-        {
-            id: 6,
-            name: "Honda Jazz",
-            image: "/placeholder.svg",
-            capacity: "5 Seats",
-            transmission: "Automatic",
-            fuel: "Bensin",
-            price: "350K",
-            category: "Hatchback",
-        },
-    ];
-
     const handleBooking = (carName) => {
         setSelectedCar(carName);
         setIsBookingOpen(true);
     };
+
+    const cars = carData;
 
     return (
         <div>
@@ -97,55 +36,13 @@ export default function Cars() {
         
                 {/* Cars Grid */}
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {cars.map((car, index) => (
-                    <Card 
-                    key={car.id}
-                    className="card-premium p-0 overflow-hidden group cursor-pointer animate-scale-in"
-                    style={{ animationDelay: `${index * 50}ms` }}
-                    >
-                    <div className="relative overflow-hidden">
-                        <img
-                        src={car.image}
-                        alt={car.name}
-                        className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                    {cars.map((car, index) => (
+                        <CarCard 
+                            key={car.id}
+                            car={car}
+                            handleBooking={handleBooking}
+                            style={{ animationDelay: `${index * 50}ms` }}
                         />
-                        <div className="absolute top-4 right-4 bg-accent text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
-                        {car.price}/day
-                        </div>
-                        <div className="absolute top-4 left-4 bg-card px-3 py-1 rounded-full text-xs font-medium">
-                        {car.category}
-                        </div>
-                    </div>
-                    
-                    <div className="p-6 space-y-4">
-                        <h3 className="text-2xl font-bold group-hover:text-accent transition-colors">
-                        {car.name}
-                        </h3>
-                        
-                        <div className="grid grid-cols-3 gap-4 py-4 border-y border-border">
-                        <div className="flex flex-col items-center gap-2">
-                            <Users className="w-5 h-5 text-accent" />
-                            <span className="text-xs text-muted-foreground">{car.capacity}</span>
-                        </div>
-                        <div className="flex flex-col items-center gap-2">
-                            <Clock className="w-5 h-5 text-accent" />
-                            <span className="text-xs text-muted-foreground">{car.transmission}</span>
-                        </div>
-                        <div className="flex flex-col items-center gap-2">
-                            <Fuel className="w-5 h-5 text-accent" />
-                            <span className="text-xs text-muted-foreground">{car.fuel}</span>
-                        </div>
-                        </div>
-        
-                        <Button 
-                        variant="accent" 
-                        className="w-full"
-                        onClick={() => handleBooking(car.name)}
-                        >
-                        Book Now
-                        </Button>
-                    </div>
-                    </Card>
                 ))}
                 </div>
         
