@@ -32,7 +32,7 @@ export default function Services() {
 
     return(
         <section className="section-spacing bg-muted/30">
-        <div className="container-premium">
+        <div className="container-premium fade-in">
           <div className="text-center mb-16 space-y-4">
             <h2 className="text-4xl md:text-5xl font-bold">Our Services</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">

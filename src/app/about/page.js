@@ -31,7 +31,7 @@ export default function About() {
         <div>
             <Navbar />
             <div className="min-h-screen pt-32 pb-20">
-            <div className="container-premium">
+            <div className="container-premium fade-in">
                 {/* Header */}
                 <div className="text-center mb-16 space-y-4 animate-fade-in">
                 <h1 className="text-5xl md:text-6xl font-bold">

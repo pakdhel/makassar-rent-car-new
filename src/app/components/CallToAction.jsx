@@ -10,7 +10,7 @@ export default function CallToAction() {
     
     return(
         <section className="section-spacing">
-        <div className="container-premium">
+        <div className="container-premium fade-in">
           <Card className="card-premium p-12 md:p-16 text-center space-y-6 bg-linear-to-br from-primary to-secondary text-primary-foreground">
             <h2 className="text-3xl md:text-4xl font-bold">
               Ready to Start Your Journey?

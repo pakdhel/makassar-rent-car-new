@@ -32,7 +32,7 @@ export default function WhyChooseUs() {
 
     return(
         <section className="section-spacing">
-        <div className="container-premium">
+        <div className="container-premium fade-in">
           <div className="text-center mb-16 space-y-4">
             <h2 className="text-4xl md:text-5xl font-bold">Why Choose Us</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
