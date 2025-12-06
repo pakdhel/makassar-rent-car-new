@@ -54,7 +54,7 @@ export default function Contact() {
                         {contactInfo.map((item, index) => (
                         <Card 
                             key={index}
-                            className="card-premium p-8 text-center space-y-4 hover:scale-105 transition-transform duration-300 animate-fade-in"
+                            className="card-premium p-8 text-center space-y-4 hover:scale-105 transition-transform duration-300 fade-in"
                             style={{ animationDelay: `${index * 100}ms` }}
                         >
                             <div className="inline-flex p-4 bg-accent/10 rounded-2xl">

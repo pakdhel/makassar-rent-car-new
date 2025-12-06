@@ -41,7 +41,7 @@ export default function Cars() {
                             key={car.id}
                             car={car}
                             handleBooking={handleBooking}
-                            style={{ animationDelay: `${index * 50}ms` }}
+                            style={{ animationDelay: `${index * 100}ms` }}
                         />
                 ))}
                 </div>

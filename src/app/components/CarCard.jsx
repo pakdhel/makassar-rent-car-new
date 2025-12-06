@@ -9,7 +9,7 @@ export default function CarCard({ car, handleBooking, style }) {
     return (
         <Card
             key={car.id}
-            className="card-premium p-0 overflow-hidden group cursor-pointer animate-scale-in"
+            className="card-premium p-0 overflow-hidden group cursor-pointer scale-in"
             style={style}
         >
             {/* --- Bagian Gambar & Info Atas --- */}

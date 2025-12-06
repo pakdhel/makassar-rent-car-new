@@ -59,9 +59,9 @@ export default function Testimonials() {
         <div>
             <Navbar />
             <div className="min-h-screen pt-32 pb-20">
-            <div className="container-premium fade-in">
+            <div className="container-premium">
                 {/* Header */}
-                <div className="text-center mb-16 space-y-4 animate-fade-in">
+                <div className="text-center mb-16 space-y-4 fade-in">
                 <h1 className="text-5xl md:text-6xl font-bold">
                     Customer <span className="text-accent">Reviews</span>
                 </h1>
@@ -72,7 +72,7 @@ export default function Testimonials() {
         
                 {/* Stats */}
                 <div className="grid md:grid-cols-3 gap-8 mb-16">
-                <Card className="card-premium p-8 text-center space-y-2">
+                <Card className="card-premium p-8 text-center space-y-2 fade-in" style={{ animationDelay: '10ms' }}>
                     <div className="text-5xl font-bold text-accent">4.9</div>
                     <div className="flex justify-center gap-1">
                     {[...Array(5)].map((_, i) => (
@@ -82,12 +82,12 @@ export default function Testimonials() {
                     <div className="text-muted-foreground">Average Rating</div>
                 </Card>
         
-                <Card className="card-premium p-8 text-center space-y-2">
+                <Card className="card-premium p-8 text-center space-y-2 fade-in" style={{ animationDelay: '60ms' }}>
                     <div className="text-5xl font-bold text-accent">500+</div>
                     <div className="text-muted-foreground">Happy Customers</div>
                 </Card>
         
-                <Card className="card-premium p-8 text-center space-y-2">
+                <Card className="card-premium p-8 text-center space-y-2 fade-in" style={{ animationDelay: '150ms' }}>
                     <div className="text-5xl font-bold text-accent">98%</div>
                     <div className="text-muted-foreground">Satisfaction Rate</div>
                 </Card>
@@ -98,7 +98,7 @@ export default function Testimonials() {
                 {testimonials.map((testimonial, index) => (
                     <Card 
                     key={testimonial.id}
-                    className="card-premium p-8 space-y-6 animate-fade-in hover:scale-105 transition-transform duration-300"
+                    className="card-premium p-8 space-y-6 fade-in hover:scale-105 transition-transform duration-300"
                     style={{ animationDelay: `${index * 50}ms` }}
                     >
                     <div className="flex justify-between items-start">
