@@ -92,7 +92,7 @@ export default function Footer() {
 
                 <div className="mt-12 pt-8 border-t border-primary-foreground/10">
                 <p className="text-center text-sm text-primary-foreground/70">
-                    © 2024 MakassarRent. All rights reserved. | Premium Car Rental Makassar
+                    © {new Date().getFullYear()} MakassarRent. All rights reserved. | Premium Car Rental Makassar
                 </p>
                 </div>
             </div>

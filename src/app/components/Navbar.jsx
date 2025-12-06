@@ -3,9 +3,9 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Menu, X, Car, Moon, Sun } from "lucide-react";
-import { Switch } from "@radix-ui/react-switch";
 import { useTheme } from "next-themes";
 import { Button } from "@/components/ui/button";
+import { Switch } from "@/components/ui/switch";
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
