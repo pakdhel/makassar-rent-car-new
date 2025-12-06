@@ -29,7 +29,7 @@ export default function CallToAction() {
               <Button 
                 variant="outline" 
                 size="xl" 
-                className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
+                className="border-primary-foreground text-primary"
                 asChild
               >
                 <Link href="/contact">Contact Us</Link>
