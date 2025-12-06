@@ -22,11 +22,11 @@ export default function HeroSection() {
                         #1 Car Rental in Makassar
                         </span>
                     </div>
-                    <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
+                    <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold">
                         Premium Car Rental
                         <span className="block text-accent mt-2">Makassar</span>
                     </h1>
-                    <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-xl">
+                    <p className="text-lg md:text-xl text-muted-foreground max-w-xl">
                         Experience the best car rental service in Makassar. Professional, trusted, and ready to serve your transportation needs.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4">
