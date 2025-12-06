@@ -26,10 +26,10 @@ export default function HeroSection() {
                             Premium Car Rental
                             <span className="block text-accent mt-2">Makassar</span>
                         </h1>
-                        <p className="text-lg md:text-xl text-muted-foreground max-w-xl">
+                        <p className="text-sm md:text-xl text-muted-foreground max-w-xl">
                             Experience the best car rental service in Makassar. Professional, trusted, and ready to serve your transportation needs.
                         </p>
-                        <div className="flex flex-col sm:flex-row gap-4">
+                        <div className="flex flex-col sm:flex-row gap-3 w-full">
                             <Button 
                             variant="hero" 
                             size="xl"
@@ -41,21 +41,23 @@ export default function HeroSection() {
                             <Link href="/cars">View Cars</Link>
                             </Button>
                         </div>
-                        <div className="flex items-center gap-8 pt-4">
+                        <div className="flex items-center gap-8 pt-4 pr-2">
                             <div>
-                            <div className="text-3xl font-bold text-primary">500+</div>
+                            <div className="text-xl md:text-3xl font-bold text-primary">500+</div>
                             <div className="text-sm text-muted-foreground">Happy Customers</div>
                             </div>
                             <div className="w-px h-12 bg-border" />
                             <div>
-                            <div className="text-3xl font-bold text-primary">50+</div>
+                            <div className="text-xl md:text-3xl font-bold text-primary">50+</div>
                             <div className="text-sm text-muted-foreground">Quality Cars</div>
                             </div>
                             <div className="w-px h-12 bg-border" />
-                            <div className="flex items-center gap-1">
-                            <Star className="w-5 h-5 text-yellow-500 fill-current" />
-                            <span className="text-3xl font-bold text-primary">4.9</span>
-                            <span className="text-sm text-muted-foreground ml-1">Rating</span>
+                            <div className="md:flex items-center gap-1">
+                                <div className="flex items-center gap-2">
+                                    <Star className="w-5 h-5 text-yellow-500 fill-current" />
+                                    <span className="text-xl md:text-3xl font-bold text-primary">4.9</span>
+                                </div>
+                                <span className="text-sm text-muted-foreground ml-1">Rating</span>
                             </div>
                         </div>
                     </div>
