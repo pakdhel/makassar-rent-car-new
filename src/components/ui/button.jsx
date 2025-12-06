@@ -10,13 +10,13 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default: "bg-primary text-primary-foreground hover:bg-primary/90 shadow-md hover:shadow-lg cursor-pointer",
-        destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90 shadow-md",
-        outline: "border-2 border-border bg-background hover:bg-muted",
-        secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/90 shadow-md hover:shadow-lg",
-        ghost: "hover:bg-muted",
-        link: "text-primary underline-offset-4 hover:underline",
+        destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90 shadow-md cursor-pointer",
+        outline: "border-2 border-border bg-background hover:bg-muted cursor-pointer",
+        secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/90 shadow-md hover:shadow-lg cursor-pointer",
+        ghost: "hover:bg-muted cursor-pointer",
+        link: "text-primary underline-offset-4 hover:underline cursor-pointer",
         accent: "bg-accent text-accent-foreground hover:bg-accent/90 shadow-md hover:shadow-lg cursor-pointer",
-        hero: "bg-gradient-to-r from-accent to-accent/80 text-white hover:from-accent/90 hover:to-accent/70 shadow-lg hover:shadow-xl transform hover:scale-105",
+        hero: "bg-gradient-to-r from-accent to-accent/80 text-white hover:from-accent/90 hover:to-accent/70 shadow-lg hover:shadow-xl transform hover:scale-105 cursor-pointer",
       },
       size: {
         default: "h-11 px-6 py-2",

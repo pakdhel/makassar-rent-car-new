@@ -25,7 +25,7 @@ const BookingModal = ({ isOpen, onClose, carName }) => {
         Halo, saya ingin booking mobil:
 
         Nama: ${formData.name}
-        Mobil: ${carName || "Pilihan dari website"}
+        Mobil: ${carName || "Belum dipilih"}
         Tanggal Ambil: ${formData.pickupDate}
         Tanggal Kembali: ${formData.returnDate}
         Lokasi Pickup: ${formData.pickupLocation}
@@ -35,7 +35,7 @@ const BookingModal = ({ isOpen, onClose, carName }) => {
         `.trim();
 
     const encodedMessage = encodeURIComponent(message);
-    
+
     const whatsappNumber = '6282192227779'; 
 
     const whatsappUrl = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodedMessage}`;

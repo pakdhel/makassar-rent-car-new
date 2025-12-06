@@ -6,10 +6,17 @@ import { Menu, X, Car, Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 import { Button } from "@/components/ui/button";
 import { Switch } from "@/components/ui/switch";
+import BookingModal from "./BookingModal";
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
     const { theme, setTheme } = useTheme();
+    const [isBookingOpen, setIsBookingOpen] = useState(false);
+    
+    const handleBooking = () => {
+      setIsOpen(false); // Opsional: tutup menu mobile jika terbuka
+      setIsBookingOpen(true);
+    };
 
     const navLinks = [
         { name: "Home", path: "/" },
@@ -20,6 +27,12 @@ export default function Navbar() {
       ];
 
     return (
+      <>
+        <BookingModal 
+          isOpen={isBookingOpen}
+          onClose={() => setIsBookingOpen(false)}
+        />
+
         <nav className="fixed top-0 left-0 right-0 z-50 bg-card/95 backdrop-blur-md border-b border-border shadow-md">
           <div className="container-premium">
             <div className="flex items-center justify-between h-20">
@@ -52,7 +65,11 @@ export default function Navbar() {
                   />
                   <Moon className="w-4 h-4 text-muted-foreground" />
                 </div>
-                <Button variant="accent" size="default">
+                <Button 
+                  variant="accent" 
+                  size="default" 
+                  onClick={handleBooking} // 👈 Perbaikan di sini
+                >
                   Book Now
                 </Button>
               </div>
@@ -90,12 +107,21 @@ export default function Navbar() {
                     <Moon className="w-4 h-4 text-muted-foreground" />
                   </div>
                 </div>
-                <Button variant="accent" size="default" className="w-full">
+                <Button 
+                  variant="accent" 
+                  size="default" 
+                  className="w-full" 
+                  onClick={() => {
+                    handleBooking(); 
+                    setIsOpen(false); // Tutup menu mobile setelah klik
+                  }}
+                >
                   Book Now
                 </Button>
               </div>
             )}
           </div>
         </nav>
+      </>
       );
 }
