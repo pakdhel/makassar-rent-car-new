@@ -35,7 +35,7 @@ export default function FeaturedCars() {
                 </p>
             </div>
 
-            <div className="grid md:grid-cols-2 md:gap-6 lg:grid-cols-3 lg:gap-8">
+            <div className="space-y-4 md:space-y-0 grid md:grid-cols-2 md:gap-6 lg:grid-cols-3 lg:gap-8">
                 {featuredCars.map((car, index) => (
                     <FeaturedCarCard key={car.id} car={car} handleBooking={handleBooking} style={{ animationDelay: `${index * 50}ms` }} />
                 ))}
