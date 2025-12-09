@@ -57,7 +57,7 @@ export const carData = [
     {
         id: 6,
         name: "Innova Zenix",
-        image: "/images/Innova Zenix.png",
+        image: "/images/Innova zenix.png",
         capacity: "5 Seats",
         transmission: "Matic",
         fuel: "Hybrid/Bensin",
