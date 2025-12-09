@@ -9,7 +9,7 @@ export const carData = [
         transmission: "Matic",
         fuel: "Bensin",
         price: "350K",
-        category: "MPV",
+        // category: "MPV",
         isFeatured: true, 
     },
     {
@@ -20,7 +20,7 @@ export const carData = [
         transmission: "Matic/Manual",
         fuel: "Bensin",
         price: "300K",
-        category: "Hatchback",
+        // category: "Hatchback",
     },
     {
         id: 3,
@@ -30,7 +30,7 @@ export const carData = [
         transmission: "Matic",
         fuel: "Diesel",
         price: "500K",
-        category: "MPV",
+        // category: "MPV",
         isFeatured: true,
     },
     {
@@ -41,7 +41,7 @@ export const carData = [
         transmission: "Manual",
         fuel: "Diesel",
         price: "400K",
-        category: "MPV",
+        // category: "MPV",
     },
     {
         id: 5,
@@ -51,7 +51,7 @@ export const carData = [
         transmission: "Matic/Manual",
         fuel: "Diesel",
         price: "800K",
-        category: "SUV",
+        // category: "SUV",
         isFeatured: true, 
     },
     {
@@ -62,7 +62,7 @@ export const carData = [
         transmission: "Matic",
         fuel: "Hybrid/Bensin",
         price: "350K",
-        category: "Hatchback",
+        // category: "Hatchback",
     },
     {
         id: 7,
@@ -72,7 +72,7 @@ export const carData = [
         transmission: "Manual",
         fuel: "Diesel",
         price: "350K",
-        category: "Hatchback",
+        // category: "Hatchback",
     },
     {
         id: 8,
@@ -82,7 +82,7 @@ export const carData = [
         transmission: "Matic/Manual",
         fuel: "Bensin",
         price: "350K",
-        category: "Hatchback",
+        // category: "Hatchback",
     },
     {
         id: 9,
@@ -92,7 +92,7 @@ export const carData = [
         transmission: "Matic",
         fuel: "Bensin",
         price: "350K",
-        category: "Hatchback",
+        // category: "Hatchback",
     },
     {
         id: 10,
@@ -102,7 +102,7 @@ export const carData = [
         transmission: "Matic/Manual",
         fuel: "Bensin",
         price: "350K",
-        category: "Hatchback",
+        // category: "Hatchback",
     },
     {
         id: 11,
@@ -112,6 +112,6 @@ export const carData = [
         transmission: "Matic/Manual",
         fuel: "Bensin",
         price: "350K",
-        category: "Hatchback",
+        // category: "Hatchback",
     },
 ];

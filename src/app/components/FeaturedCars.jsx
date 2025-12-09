@@ -1,17 +1,11 @@
 "use client"
 
 import { useState } from "react";
-import { Card } from "@/components/ui/card";
-import { 
-    Users, 
-    Clock,
-    Fuel
-  } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import BookingModal from "./BookingModal";
 import { carData } from "@/data/carsData";
-import CarCard from "./CarCard";
+import FeaturedCarCard from "./FeaturedCarCard";
 
 export default function FeaturedCars() {
     const [isBookingOpen, setIsBookingOpen] = useState(false);
@@ -41,9 +35,9 @@ export default function FeaturedCars() {
                 </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-2 md:gap-6 lg:grid-cols-3 lg:gap-8">
                 {featuredCars.map((car, index) => (
-                    <CarCard key={car.id} car={car} handleBooking={handleBooking} style={{ animationDelay: `${index * 50}ms` }} />
+                    <FeaturedCarCard key={car.id} car={car} handleBooking={handleBooking} style={{ animationDelay: `${index * 50}ms` }} />
                 ))}
             </div>
 
