@@ -43,14 +43,14 @@ export default function CarCard({ car, handleBooking, style }) {
                     <div className="grid grid-cols-3 gap-2 sm:gap-3 py-2 md:py-4 border-border">
                     <div className="flex flex-col items-center gap-1">
                         <Users className="w-4 h-4 md:w-5 md:h-5 text-accent" />
-                        <span className="text-sm md:text-base text-muted-foreground">
+                        <span className="text-[10px] sm:text-xs md:text-sm text-center leading-tight text-muted-foreground">
                         {car.capacity}
                         </span>
                     </div>
 
                     <div className="flex flex-col items-center gap-1">
                         <Cog className="w-4 h-4 md:w-5 md:h-5 text-accent" />
-                        <span className="text-sm md:text-base text-muted-foreground">
+                        <span className="text-[10px] sm:text-xs md:text-sm text-center leading-tight text-muted-foreground">
                         {car.transmission}
                         </span>
                     </div>
@@ -58,7 +58,7 @@ export default function CarCard({ car, handleBooking, style }) {
                     {car.fuel && (
                         <div className="flex flex-col items-center gap-1">
                         <Fuel className="w-4 h-4 md:w-5 md:h-5 text-accent" />
-                        <span className="text-sm md:text-base text-muted-foreground">
+                        <span className="text-[10px] sm:text-xs md:text-sm text-center leading-tight text-muted-foreground">
                             {car.fuel}
                         </span>
                         </div>
