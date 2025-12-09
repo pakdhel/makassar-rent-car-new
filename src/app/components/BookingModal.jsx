@@ -45,7 +45,7 @@ const BookingModal = ({ isOpen, onClose, carName }) => {
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose} >
-      <DialogContent className="sm:max-w-[500px] rounded-2xl bg-white">
+      <DialogContent className="sm:max-w-[500px] rounded-2xl">
         <DialogHeader>
           <DialogTitle className="text-2xl font-bold text-primary">
             Book Your Car
@@ -83,7 +83,7 @@ const BookingModal = ({ isOpen, onClose, carName }) => {
                 value={formData.pickupDate}
                 onChange={(e) => setFormData({ ...formData, pickupDate: e.target.value })}
                 required
-                className="rounded-xl"
+                className=""
               />
             </div>
 
