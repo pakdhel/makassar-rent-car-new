@@ -3,6 +3,7 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Users, Clock, Fuel } from "lucide-react";
+import Image from "next/image";
 
 
 export default function CarCard({ car, handleBooking, style }) {
@@ -14,10 +15,12 @@ export default function CarCard({ car, handleBooking, style }) {
         >
             {/* --- Bagian Gambar & Info Atas --- */}
             <div className="relative overflow-hidden">
-                <img
+                <Image
                     src={car.image}
                     alt={car.name}
-                    className="w-full h-40 sm:h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                    width={500}
+                    height={500}
+                    className="w-full h-40 sm:h-64 object-contain group-hover:scale-105 transition-transform duration-500"
                 />
 
                 {/* Price Tag */}
