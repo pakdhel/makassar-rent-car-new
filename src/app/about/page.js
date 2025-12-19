@@ -101,7 +101,7 @@ export default function About() {
                 </div>
         
                 {/* Stats */}
-                <div className="grid md:grid-cols-4 gap-8 bg-linear-to-br from-primary to-secondary rounded-3xl p-12 text-primary-foreground">
+                {/* <div className="grid md:grid-cols-4 gap-8 bg-linear-to-br from-primary to-secondary rounded-3xl p-12 text-primary-foreground">
                 <div className="text-center space-y-2">
                     <div className="text-5xl font-bold">500+</div>
                     <div className="text-primary-foreground/80">Happy Customers</div>
@@ -118,7 +118,7 @@ export default function About() {
                     <div className="text-5xl font-bold">4.9</div>
                     <div className="text-primary-foreground/80">Average Rating</div>
                 </div>
-                </div>
+                </div> */}
             </div>
             </div>
             <Footer />
