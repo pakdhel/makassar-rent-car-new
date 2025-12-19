@@ -28,31 +28,7 @@ export default function Testimonials() {
           rating: 5,
           text: "Great experience renting from MakassarRent. The self-drive option was perfect for our family vacation. The car was in excellent condition.",
           date: "3 weeks ago",
-        },
-        {
-          id: 4,
-          name: "Linda Chen",
-          role: "Corporate Client",
-          rating: 5,
-          text: "Professional service from start to finish. We regularly rent cars for our business trips and MakassarRent never disappoints.",
-          date: "1 week ago",
-        },
-        {
-          id: 5,
-          name: "Rudi Habibie",
-          role: "Local Resident",
-          rating: 5,
-          text: "Transparent pricing and no hidden fees. The team was helpful in recommending the right car for my needs. Will definitely use their service again.",
-          date: "2 months ago",
-        },
-        {
-          id: 6,
-          name: "Maria Fernandez",
-          role: "International Tourist",
-          rating: 5,
-          text: "As a foreigner visiting Makassar, the airport pickup service was incredibly convenient. The driver was friendly and spoke good English.",
-          date: "3 weeks ago",
-        },
+        }
       ];
     
       return (
@@ -71,7 +47,7 @@ export default function Testimonials() {
                 </div>
         
                 {/* Stats */}
-                <div className="grid md:grid-cols-3 gap-8 mb-16">
+                {/* <div className="grid md:grid-cols-3 gap-8 mb-16">
                 <Card className="card-premium p-8 text-center space-y-2 fade-in" style={{ animationDelay: '10ms' }}>
                     <div className="text-5xl font-bold text-accent">4.9</div>
                     <div className="flex justify-center gap-1">
@@ -91,7 +67,7 @@ export default function Testimonials() {
                     <div className="text-5xl font-bold text-accent">98%</div>
                     <div className="text-muted-foreground">Satisfaction Rate</div>
                 </Card>
-                </div>
+                </div> */}
         
                 {/* Testimonials Grid */}
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
