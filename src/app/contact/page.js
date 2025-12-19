@@ -11,25 +11,25 @@ export default function Contact() {
         {
           icon: Phone,
           title: "Phone",
-          detail: "+62 812-3456-7890",
-          link: "tel:+6281234567890",
+          detail: "+628 979 698 378",
+          link: "tel:+628979698378",
         },
         {
           icon: MessageCircle,
           title: "WhatsApp",
-          detail: "+62 812-3456-7890",
-          link: "https://wa.me/6281234567890",
+          detail: "+628 979 698 378",
+          link: "https://wa.me/628979698378",
         },
         {
           icon: Mail,
           title: "Email",
-          detail: "info@makassarrent.com",
-          link: "mailto:info@makassarrent.com",
+          detail: "syahrulchalu123@gmail.com",
+          link: "mailto:syahrulchalu123@gmail.com",
         },
         {
           icon: MapPin,
           title: "Address",
-          detail: "Jl. Contoh No.123, Makassar, Sulawesi Selatan",
+          detail: "Jl. Poros Bandara Baru, Baji Mangngai, Kec. Mandai, Kabupaten Maros, Sulawesi Selatan 90552",
           link: "https://maps.google.com",
         },
     ];
@@ -74,9 +74,9 @@ export default function Contact() {
                     </div>
 
                     {/* Main Content Grid */}
-                    <div className="grid lg:grid-cols-2 gap-12 items-start">
+                    {/* <div className="grid lg:grid-cols-2 gap-12 items-start"> */}
                         {/* Operating Hours */}
-                        <Card className="card-premium p-8 space-y-6">
+                        {/* <Card className="card-premium p-8 space-y-6">
                         <div className="flex items-center gap-3">
                             <div className="p-3 bg-accent/10 rounded-xl">
                             <Clock className="w-6 h-6 text-accent" />
@@ -114,10 +114,10 @@ export default function Contact() {
                             Chat on WhatsApp
                             </Button>
                         </div>
-                        </Card>
+                        </Card> */}
 
                         {/* Map */}
-                        <Card className="card-premium p-0 overflow-hidden h-full">
+                        {/* <Card className="card-premium p-0 overflow-hidden h-full">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127056.08729654!2d119.3378!3d-5.1477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbee329d96c4671%3A0x3030bfbcaf770b0!2sMakassar%2C%20Makassar%20City%2C%20South%20Sulawesi!5e0!3m2!1sen!2sid!4v1234567890"
                             width="100%"
@@ -128,8 +128,8 @@ export default function Contact() {
                             referrerPolicy="no-referrer-when-downgrade"
                             title="MakassarRent Location"
                         />
-                        </Card>
-                    </div>
+                        </Card> */}
+                    {/* </div> */}
 
                     {/* FAQ Quick Links */}
                     <div className="mt-16 bg-muted/50 rounded-3xl p-12 text-center space-y-6">
@@ -141,13 +141,13 @@ export default function Contact() {
                             <Button 
                                 variant="accent" 
                                 size="lg"
-                                onClick={() => window.open("https://wa.me/6281234567890", "_blank")}
+                                onClick={() => window.open("https://wa.me/628979698378", "_blank")}
                             >
                                 Quick Support via WhatsApp
                             </Button>
-                            <Button variant="outline" size="lg">
+                            {/* <Button variant="outline" size="lg">
                                 Browse FAQ
-                            </Button>
+                            </Button> */}
                         </div>
                     </div>
                 </div>
