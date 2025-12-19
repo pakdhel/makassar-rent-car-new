@@ -18,11 +18,11 @@ export default function WhyChooseUs() {
           title: "Complete Fleet",
           description: "Various car options from economy to luxury to suit your needs",
         },
-        {
-          icon: DollarSign,
-          title: "Transparent Pricing",
-          description: "Clear pricing with no hidden fees, what you see is what you pay",
-        },
+        // {
+        //   icon: DollarSign,
+        //   title: "Transparent Pricing",
+        //   description: "Clear pricing with no hidden fees, what you see is what you pay",
+        // },
         {
           icon: UserCheck,
           title: "Driver Available",
@@ -40,7 +40,7 @@ export default function WhyChooseUs() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-8">
             {features.map((feature, index) => (
               <Card 
                 key={index} 

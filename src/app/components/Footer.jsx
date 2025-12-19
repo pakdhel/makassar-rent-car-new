@@ -76,15 +76,15 @@ export default function Footer() {
                     <ul className="space-y-3">
                     <li className="flex items-start gap-2">
                         <MapPin className="w-5 h-5 text-accent mt-0.5 shrink-0" />
-                        <span className="text-sm text-primary-foreground/80">Jl. Contoh No.123, Makassar, Sulawesi Selatan</span>
+                        <span className="text-sm text-primary-foreground/80">Jl. Poros Bandara Baru, Baji Mangngai, Kec. Mandai, Kabupaten Maros, Sulawesi Selatan 90552</span>
                     </li>
                     <li className="flex items-center gap-2">
                         <Phone className="w-5 h-5 text-accent shrink-0" />
-                        <span className="text-sm text-primary-foreground/80">+62 812-3456-7890</span>
+                        <span className="text-sm text-primary-foreground/80">08979698378</span>
                     </li>
                     <li className="flex items-center gap-2">
                         <Mail className="w-5 h-5 text-accent shrink-0" />
-                        <span className="text-sm text-primary-foreground/80">info@makassarrent.com</span>
+                        <span className="text-sm text-primary-foreground/80">syahrulchalu123@gmail.com</span>
                     </li>
                     </ul>
                 </div>

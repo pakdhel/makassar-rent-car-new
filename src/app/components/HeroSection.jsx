@@ -41,7 +41,7 @@ export default function HeroSection() {
                             <Link href="/cars">View Cars</Link>
                             </Button>
                         </div>
-                        <div className="flex items-center gap-8 pt-4 pr-2">
+                        {/* <div className="flex items-center gap-8 pt-4 pr-2">
                             <div>
                             <div className="text-xl md:text-3xl font-bold text-primary">500+</div>
                             <div className="text-sm text-muted-foreground">Happy Customers</div>
@@ -59,12 +59,12 @@ export default function HeroSection() {
                                 </div>
                                 <span className="text-sm text-muted-foreground ml-1">Rating</span>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="relative fade-in hidden md:block">
                         <div className="absolute inset-0 bg-linear-to-tr from-accent/20 to-transparent rounded-3xl" />
                             <img
-                                src="/placeholder.svg"
+                                src="/images/hero3.png"
                                 alt="Premium Car"
                                 className="relative z-10 w-full h-auto rounded-3xl shadow-premium-lg"
                             />
